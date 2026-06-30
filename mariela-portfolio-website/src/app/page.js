@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectSection"; 
 import EmailSection from "./components/EmailSection"; 
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection /> 
         <EmailSection />
+        <BackToTop />
       </div>
     </main>
   );

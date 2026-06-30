@@ -12,7 +12,7 @@ const HeroSection = () => {
             <span className="text-[#00ADB5]">Hello, I'm {" "}</span>
             <br />
             <TypeAnimation
-              sequence={['Mariela', 1000, 'a Web Developer', 1000, 'a Mobile Developer', 1000, 'a UI/UX Designer', 1000]}
+              sequence={['Mariela', 1000, 'a Web Developer', 1000, 'a Mobile Developer', 1000, 'a UI/UX Designer', 1000, 'a Virtual Assistant', 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -24,7 +24,13 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-[#00ADB5] text-white font-bold hover:bg-[#008d94] transition-all shadow-[0_0_20px_rgba(0,173,181,0.3)]">
+            <button 
+              onClick={() => {
+                const emailSection = document.getElementById("contact"); // or "email-section" depending on your target ID
+                emailSection?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-[#00ADB5] text-white font-bold hover:bg-[#008d94] transition-all shadow-[0_0_20px_rgba(0,173,181,0.3)]"
+            >
               Hire Me
             </button>
             <a 
