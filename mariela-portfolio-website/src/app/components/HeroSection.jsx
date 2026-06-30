@@ -12,7 +12,7 @@ const HeroSection = () => {
             <span className="text-[#00ADB5]">Hello, I'm {" "}</span>
             <br />
             <TypeAnimation
-              sequence={['Mariela', 1000, 'a Web Developer', 1000, 'a Mobile Developer', 1000, 'a UI/UX Designer', 1000, 'a Virtual Assistant', 1000]}
+              sequence={['Mariela', 1000, 'a Web Developer', 1000, 'a Mobile Developer', 1000, 'a UI/UX Designer', 900, 'a Virtual Assistant', 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
